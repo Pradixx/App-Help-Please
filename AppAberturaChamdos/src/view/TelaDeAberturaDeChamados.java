@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
  */
 package view;
 
@@ -10,10 +10,10 @@ import javax.swing.JOptionPane;
  *
  * @author diegu
  */
-public class TelaDeAberturaDeChamados extends javax.swing.JFrame {
+public class TelaDeAberturaDeChamados extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form TelaLogin
+     * Creates new form TelaDeAberturaDeChamados1
      */
     public TelaDeAberturaDeChamados() {
         initComponents();
@@ -37,11 +37,7 @@ public class TelaDeAberturaDeChamados extends javax.swing.JFrame {
         txtTelefoneChamado = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Acesso");
-        setMinimumSize(new java.awt.Dimension(798, 620));
-        setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
-        setResizable(false);
+        setTitle("Tela de Abertura de Chamados");
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtSenhaChamado.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -85,7 +81,6 @@ public class TelaDeAberturaDeChamados extends javax.swing.JFrame {
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
         pack();
-        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     public boolean checkLogin(String login, String senha){
@@ -117,78 +112,40 @@ public class TelaDeAberturaDeChamados extends javax.swing.JFrame {
     }
     
     private void BtnEfetuarChamadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEfetuarChamadoActionPerformed
-        
+
         if(this.checkLogin(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword()))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-        
+
         }else if((this.checkLogin1(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-        
+
         }else if((this.checkLogin2(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-            
+
         }else if((this.checkLogin3(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-            
+
         }else if((this.checkLogin4(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-            
+
         }else if((this.checkLogin5(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-            
+
         }else if((this.checkLogin6(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
 
         }else{
             JOptionPane.showMessageDialog(null, "Senha ou Usuário incorreta.");
-        } 
+        }
     }//GEN-LAST:event_BtnEfetuarChamadoActionPerformed
 
-    
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TelaDeAberturaDeChamados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TelaDeAberturaDeChamados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TelaDeAberturaDeChamados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TelaDeAberturaDeChamados.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new TelaDeAberturaDeChamados().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton BtnEfetuarChamado;
