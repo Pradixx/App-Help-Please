@@ -35,7 +35,7 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Acesso");
+        setTitle("Tela de Login");
         setMaximumSize(new java.awt.Dimension(798, 620));
         setMinimumSize(new java.awt.Dimension(798, 620));
         setModalExclusionType(java.awt.Dialog.ModalExclusionType.APPLICATION_EXCLUDE);
