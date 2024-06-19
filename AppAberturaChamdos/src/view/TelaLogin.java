@@ -4,6 +4,7 @@
  */
 package view;
 
+
 import javax.swing.JOptionPane;
 
 /**
@@ -18,7 +19,7 @@ public class TelaLogin extends javax.swing.JFrame {
     public TelaLogin() {
         initComponents();
     }
-
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -32,6 +33,7 @@ public class TelaLogin extends javax.swing.JFrame {
         txtLogin = new javax.swing.JTextField();
         BtnRealizarCadastro = new javax.swing.JButton();
         BtnEntrar = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -44,6 +46,11 @@ public class TelaLogin extends javax.swing.JFrame {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtSenha.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        txtSenha.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtSenhaActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 350, 360, 40));
 
         txtLogin.setFont(new java.awt.Font("Gill Sans MT", 0, 14)); // NOI18N
@@ -74,9 +81,13 @@ public class TelaLogin extends javax.swing.JFrame {
                 BtnEntrarActionPerformed(evt);
             }
         });
-        getContentPane().add(BtnEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 420, 250, 100));
+        getContentPane().add(BtnEntrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 420, 250, 100));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login_1.png"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Quadrado para tampar.jpeg"))); // NOI18N
+        jLabel3.setText("jLabel3");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 530, 240, 30));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Login.png"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
@@ -86,8 +97,7 @@ public class TelaLogin extends javax.swing.JFrame {
 
     private void BtnRealizarCadastroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRealizarCadastroActionPerformed
 
-        TelaCadastro telaDeCadastro = new TelaCadastro();
-        telaDeCadastro.setVisible(true);
+        
         
     }//GEN-LAST:event_BtnRealizarCadastroActionPerformed
 
@@ -168,6 +178,10 @@ public class TelaLogin extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_BtnEntrarActionPerformed
 
+    private void txtSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSenhaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtSenhaActionPerformed
+
     
     /**
      * @param args the command line arguments
@@ -208,6 +222,7 @@ public class TelaLogin extends javax.swing.JFrame {
     private javax.swing.JButton BtnEntrar;
     private javax.swing.JButton BtnRealizarCadastro;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JTextField txtLogin;
     private javax.swing.JPasswordField txtSenha;
     // End of variables declaration//GEN-END:variables
