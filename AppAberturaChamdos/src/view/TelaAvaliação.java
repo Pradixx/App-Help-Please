@@ -72,7 +72,7 @@ public class TelaAvaliação extends javax.swing.JInternalFrame {
         txtAlgumaMelhoria.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         getContentPane().add(txtAlgumaMelhoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 390, 490, 80));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TelaAvaliação.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TelaAvaliação_1.png"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 600));
 
