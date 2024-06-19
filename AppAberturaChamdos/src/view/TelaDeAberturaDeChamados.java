@@ -112,10 +112,12 @@ public class TelaDeAberturaDeChamados extends javax.swing.JInternalFrame {
     }
     
     private void BtnEfetuarChamadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEfetuarChamadoActionPerformed
-
+        boolean senhaContaChamado = false;
+        
         if(this.checkLogin(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword()))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
+            senhaContaChamado = true;
 
         }else if((this.checkLogin1(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
