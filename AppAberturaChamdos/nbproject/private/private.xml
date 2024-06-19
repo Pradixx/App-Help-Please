@@ -4,11 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/diegu/OneDrive/Imagens/Documentos/NetBeansProjects/AppAberturaChamdos/src/view/TelaLogin.java</file>
+            <file>file:/C:/Users/diegu/OneDrive/Imagens/Documentos/NetBeansProjects/AppAberturaChamdos/src/view/TelaAberturaDeChamados.java</file>
             <file>file:/C:/Users/diegu/OneDrive/Imagens/Documentos/NetBeansProjects/AppAberturaChamdos/src/view/TelaPrincipal.java</file>
+            <file>file:/C:/Users/diegu/OneDrive/Imagens/Documentos/NetBeansProjects/AppAberturaChamdos/src/view/TelaVisualizaçãoDoChamados.java</file>
             <file>file:/C:/Users/diegu/OneDrive/Imagens/Documentos/NetBeansProjects/AppAberturaChamdos/src/view/TelaSobreAEmpresa.java</file>
             <file>file:/C:/Users/diegu/OneDrive/Imagens/Documentos/NetBeansProjects/AppAberturaChamdos/src/view/TelaAvaliação.java</file>
-            <file>file:/C:/Users/diegu/OneDrive/Imagens/Documentos/NetBeansProjects/AppAberturaChamdos/src/view/TelaCadastro.java</file>
-            <file>file:/C:/Users/diegu/OneDrive/Imagens/Documentos/NetBeansProjects/AppAberturaChamdos/src/view/TelaDeAberturaDeChamados.java</file>
+            <file>file:/C:/Users/diegu/OneDrive/Imagens/Documentos/NetBeansProjects/AppAberturaChamdos/src/view/TelaInicial.java</file>
         </group>
     </open-files>
 </project-private>
