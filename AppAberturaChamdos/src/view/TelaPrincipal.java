@@ -37,7 +37,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
-        jMenuItem7 = new javax.swing.JMenuItem();
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
@@ -86,6 +85,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/user_edit.png"))); // NOI18N
         jMenuItem3.setText("Alterar Dados do Chamado");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem3);
 
         jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/user_delete.png"))); // NOI18N
@@ -101,15 +105,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/group.png"))); // NOI18N
         jMenu4.setText("Clientes");
-
-        jMenuItem7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/group.png"))); // NOI18N
-        jMenuItem7.setText("Alterar Cadastro");
-        jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem7ActionPerformed(evt);
-            }
-        });
-        jMenu4.add(jMenuItem7);
 
         jMenuItem8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/group_delete.png"))); // NOI18N
         jMenuItem8.setText("Excluir Conta");
@@ -177,7 +172,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         
-        TelaDeAberturaDeChamados TelaChamados = new TelaDeAberturaDeChamados();
+        TelaVisualizaçãoDoChamados TelaChamados = new TelaVisualizaçãoDoChamados ();
         jDesktopPane1.add(TelaChamados);
         TelaChamados.setVisible(true);
         
@@ -192,23 +187,22 @@ public class TelaPrincipal extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItem8ActionPerformed
 
-    private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
-        
-        TelaCadastro telaDeCadastro = new TelaCadastro();
-        telaDeCadastro.setVisible(true);
-        
-    }//GEN-LAST:event_jMenuItem7ActionPerformed
-
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        JOptionPane.showMessageDialog(null, "Chamado Excluido com sucesso!");
+        
+        TelaVisualizaçãoDoChamados TelaChamados = new TelaVisualizaçãoDoChamados ();
+        jDesktopPane1.add(TelaChamados);
+        TelaChamados.setVisible(true);
+        
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     private void jMenu5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu5ActionPerformed
-       
+       TelaSobreAEmpresa TelaEmpresa = new TelaSobreAEmpresa();
+        jDesktopPane1.add(TelaEmpresa);
+        TelaEmpresa.setVisible(true);
     }//GEN-LAST:event_jMenu5ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-        
+          
         TelaSobreAEmpresa TelaEmpresa = new TelaSobreAEmpresa();
         jDesktopPane1.add(TelaEmpresa);
         TelaEmpresa.setVisible(true);
@@ -222,6 +216,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         TelaAvaliação.setVisible(true);
         
     }//GEN-LAST:event_jMenuItem6ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        
+        TelaVisualizaçãoDoChamados TelaChamados = new TelaVisualizaçãoDoChamados ();
+        jDesktopPane1.add(TelaChamados);
+        TelaChamados.setVisible(true);
+        
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -272,7 +274,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
     // End of variables declaration//GEN-END:variables
 }
