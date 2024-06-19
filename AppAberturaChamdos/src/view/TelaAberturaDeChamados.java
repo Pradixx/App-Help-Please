@@ -19,7 +19,16 @@ public class TelaAberturaDeChamados extends javax.swing.JFrame {
     public TelaAberturaDeChamados() {
         initComponents();
     }
-
+    public void checarSenhaConta(){
+        TelaVisualizaçãoDoChamados.AddLinhaJTable(new Object[]{
+                                                                txtNomeChamado.getText(),
+                                                                txtAssuntoChamado.getText(),
+                                                                txtTelefoneChamado.getText(),
+                                                                txtEndereçoChamado .getText(),
+        });
+    }
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -118,42 +127,35 @@ public class TelaAberturaDeChamados extends javax.swing.JFrame {
     }
     
     private void BtnEfetuarChamadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnEfetuarChamadoActionPerformed
-
-        TelaVisualizaçãoDoChamados.AddLinhaJTable(new Object[]{
-                                                                txtNomeChamado.getText(),
-                                                                txtAssuntoChamado.getText(),
-                                                                txtTelefoneChamado.getText(),
-                                                                txtEndereçoChamado .getText(),
-        });
         
         if(this.checkLogin(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword()))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-
+            checarSenhaConta();
         }else if((this.checkLogin1(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-
+            checarSenhaConta();
         }else if((this.checkLogin2(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-
+            checarSenhaConta();
         }else if((this.checkLogin3(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-
+            checarSenhaConta();
         }else if((this.checkLogin4(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-
+            checarSenhaConta();
         }else if((this.checkLogin5(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-
+            checarSenhaConta();
         }else if((this.checkLogin6(txtNomeChamado.getText(), new String(txtSenhaChamado.getPassword())))){
             JOptionPane.showMessageDialog(null, "Chamado Efetuado com sucesso, aguarde atualizações no email de Cadastro!");
             this.setVisible(false);
-
+            checarSenhaConta();
         }else{
             JOptionPane.showMessageDialog(null, "Senha ou Usuário incorreta.");
         }
