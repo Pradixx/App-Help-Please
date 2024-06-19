@@ -35,6 +35,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         jMenu3 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
+        BtnMonitorarChamado = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
@@ -90,6 +91,15 @@ public class TelaPrincipal extends javax.swing.JFrame {
             }
         });
         jMenu3.add(jMenuItem4);
+
+        BtnMonitorarChamado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/zoom.png"))); // NOI18N
+        BtnMonitorarChamado.setText("Monitorar Chamado");
+        BtnMonitorarChamado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnMonitorarChamadoActionPerformed(evt);
+            }
+        });
+        jMenu3.add(BtnMonitorarChamado);
 
         jMenuBar1.add(jMenu3);
 
@@ -207,6 +217,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
+    private void BtnMonitorarChamadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnMonitorarChamadoActionPerformed
+        TelaMonitoramentoDoChamados1 TelaMonitorar = new TelaMonitoramentoDoChamados1();
+        jDesktopPane1.add(TelaMonitorar);
+        TelaMonitorar.setVisible(true);
+    }//GEN-LAST:event_BtnMonitorarChamadoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -243,6 +259,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenuItem BtnMonitorarChamado;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
