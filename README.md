@@ -68,10 +68,15 @@ O arquivo `TelaLogin.java` contém credenciais de teste codificadas para acesso 
 | Bruno      | 123   |
 | Gustavo    | 123   |
 
+---
+
 ## Contribuição
 
-Se você deseja contribuir com este projeto, sinta-se à vontade para fazer um fork do repositório e enviar suas pull requests. Para grandes mudanças, por favor, abra uma issue primeiro para discutir o que você gostaria de mudar.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias, correções de bugs ou novas funcionalidades.
+
+---
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo `LICENSE` (se existir) para mais detalhes.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes. 
+
